@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.8b049c93.css",
-    "main.js": "/test/static/js/main.be2bccdc.js",
+    "main.css": "/test/static/css/main.4a1445c6.css",
+    "main.js": "/test/static/js/main.0e7f5d10.js",
     "static/js/787.66975ca6.chunk.js": "/test/static/js/787.66975ca6.chunk.js",
-    "static/media/logo.svg": "/test/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/ucsb_beach.png": "/test/static/media/ucsb_beach.4af544582fbae5f4c688.png",
+    "static/media/ucsb_banner.jpg": "/test/static/media/ucsb_banner.f7679940189b4f1fb9f4.jpg",
+    "static/media/math.jpg": "/test/static/media/math.61c15e87747ce7aeea61.jpg",
+    "static/media/logo.jpg": "/test/static/media/logo.eb3eef07c76fdbb451d6.jpg",
     "index.html": "/test/index.html",
-    "main.8b049c93.css.map": "/test/static/css/main.8b049c93.css.map",
-    "main.be2bccdc.js.map": "/test/static/js/main.be2bccdc.js.map",
+    "main.4a1445c6.css.map": "/test/static/css/main.4a1445c6.css.map",
+    "main.0e7f5d10.js.map": "/test/static/js/main.0e7f5d10.js.map",
     "787.66975ca6.chunk.js.map": "/test/static/js/787.66975ca6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b049c93.css",
-    "static/js/main.be2bccdc.js"
+    "static/css/main.4a1445c6.css",
+    "static/js/main.0e7f5d10.js"
   ]
 }
