@@ -9,13 +9,13 @@ function App() {
   return (
     <div className="App">
         <section className="bg-slate-50">
-          <Navbar></Navbar>
-          <img className="w-full" src={banner1} alt="UCSB campus"></img>
+          <Navbar />
+          <img className="object-cover object-top w-full h-40 md:h-60" src={banner1} alt="UCSB campus"></img>
         </section>
-        <About />
-        <Events />
-        <Staff />
-        <Contact />
+        <About/>
+        <Events/>
+        <Staff/>
+        <Contact/>
         <img className="w-full" src={banner2} alt="UCSB beach"></img>
     </div>
   );
@@ -24,18 +24,15 @@ function App() {
 function About() {
     return (
       <section id="about" className="bg-slate-50">
-        <div className="container max-w-screen-xl p-10 mx-auto lg:grid lg:grid-cols-2 lg:gap-8">
-          <img className="w-full my-auto rounded-md" src={math} alt="Math Lecture"></img>
+        <TwoColContainer className="p-10">
+          <img className="w-full my-auto rounded-md mb-10 sm:mb-auto" src={math} alt="Math Lecture"></img>
           <div className="w-full sm:p-10">
-            <h1 className="text-5xl font-bold leading-tight text-slate-800">
-                About us.
-            </h1>
-            
-            <p className="mt-10 text-2xl text-slate-700">
+            <Title>About us.</Title>
+            <Body>
               The Association for Women in Math Student Chapter at UCSB is a club dedicated to empowering and unifying a community of mathematicians, both undergraduate and graduate. We support young women and non-binary individuals who feel that they are one of few in this field of study, and we focus on presenting a variety of speakers, events and opportunities to reach all strands of the mathematical community. All genders are welcome at every meeting.
-            </p>
+            </Body>
           </div>
-        </div>
+        </TwoColContainer>
       </section>
     );
 }
@@ -43,26 +40,18 @@ function About() {
 function Events() {
   return (
     <section id="events" className="bg-slate-200">
-      <div className="container p-0 sm:p-10 max-w-screen-xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8">
+      <TwoColContainer className="p-0 sm:p-10">
         <div className="w-full p-10 sm:p-10">
-          <h1 className="text-5xl font-bold leading-tight text-slate-800">
-              Events.
-          </h1>
-          
-          <p className="mt-10 text-2xl text-slate-700">
+          <Title>Events.</Title>
+          <Body>
               We meet [weekly?] at [time/day?]. Pizza? Research and industry opportunities? Social events? Cool math stuff? I actually don't know.
-          </p>
-
-          <a href="https://www.facebook.com/UCSBAWM/"><p className="text-2xl text-cyan-600 underline">
-              Check us out on Facebook.
-          </p></a>
+          </Body>
+          <Link href="https://www.facebook.com/UCSBAWM/">Check us out on Facebook.</Link>
         </div>
         <div className="w-full pb-10">
-          <div className="overflow-auto">
-            <iframe className="mx-auto" title="Facebook Page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUCSBAWM%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500"></iframe>
-          </div>
+          <FacebookIFrame/>
         </div>
-      </div>
+      </TwoColContainer>
     </section>
   );
 }
@@ -70,8 +59,8 @@ function Events() {
 function Staff() {
   return (
     <section id="staff" className="bg-slate-50 sm:px-10">
-      <div className="container max-w-screen-xl mx-auto p-10">
-        <div className="text-center text-5xl font-bold text-slate-800">Staff.</div>
+      <div className="container max-w-screen-xl mx-auto sm:p-10 py-10">
+        <Title className="text-center">Staff.</Title>
         <div className="mx-auto p-10 overflow-auto">
           <div className="flex flex-row flex-nowrap lg:flex-wrap lg:justify-center gap-8">
             <Card img={placeholder} name="Gahl Shemy" position="President" />
@@ -101,20 +90,44 @@ function Card(props){
 function Contact(){
   return (
     <section id="contact" className="bg-slate-200">
-      <div className="container max-w-screen-xl p-10 mx-auto lg:grid lg:grid-cols-2 lg:gap-8">
-        <img className="w-full my-auto rounded-md" src={logo} alt="AWM Logo written in Chalk"></img>
+      <TwoColContainer className="p-10">
+        <img className="w-full my-auto rounded-md mb-10 sm:mb-auto" src={logo} alt="AWM Logo written in Chalk"></img>
         <div className="w-full sm:p-10">
-          <h1 className="text-5xl font-bold leading-tight text-slate-800">
-              Contact.
-          </h1>
-          
-          <p className="mt-10 text-2xl text-slate-700">
+          <Title>Contact.</Title>
+          <Body>
             Reach us... On facebook? Is there an email?
-          </p>
+          </Body>
         </div>
-      </div>
+      </TwoColContainer>
     </section>
   );
 }
+
+
+const Title = ({className, children}) => (
+  <h1 className={"text-5xl font-bold leading-tight text-slate-800 " + className}>{children}</h1>
+);
+
+const TwoColContainer = ({className, children}) => (
+  <div className={"container max-w-screen-xl mx-auto lg:grid lg:grid-cols-2 lg:gap-8 " + className}>
+    {children}
+  </div>
+)
+
+const Body = ({children}) => (
+  <p className="mt-6 text-2xl text-slate-700">{children}</p>
+)
+
+const Link = ({href, children}) => (
+  <a href={href} ><p className="text-2xl text-cyan-600 underline">
+    {children}
+  </p></a>
+)
+
+const FacebookIFrame = ()=>(
+  <div className="overflow-auto">
+    <iframe className="mx-auto" title="Facebook Page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUCSBAWM%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500"></iframe>
+  </div>
+);
 
 export default App;
