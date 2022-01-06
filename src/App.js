@@ -2,7 +2,7 @@ import Navbar from './Navbar.js';
 import math from './media/math.jpg';
 import banner1 from './media/ucsb_banner.jpg';
 import banner2 from './media/ucsb_beach.png';
-import placeholder from './media/staff/placeholder.png';
+import placeholder from './media/Officers/placeholder.png';
 import logo from './media/logo.jpg';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         </section>
         <About/>
         <Events/>
-        <Staff/>
+        <Officers/>
         <Contact/>
         <img className="w-full" src={banner2} alt="UCSB beach"></img>
     </div>
@@ -56,11 +56,11 @@ function Events() {
   );
 }
 
-function Staff() {
+function Officers() {
   return (
-    <section id="staff" className="bg-slate-50 sm:px-10">
+    <section id="Officers" className="bg-slate-50 sm:px-10">
       <div className="container max-w-screen-xl mx-auto sm:p-10 py-10">
-        <Title className="text-center">Staff.</Title>
+        <Title className="text-center">Officers.</Title>
         <div className="mx-auto p-10 overflow-auto">
           <div className="flex flex-row flex-nowrap lg:flex-wrap lg:justify-center gap-8">
             <Card img={placeholder} name="Gahl Shemy" position="President" />
@@ -68,7 +68,7 @@ function Staff() {
             <Card img={placeholder} name="Belinda Lehmann" position="Social Chair" />
             <Card img={placeholder} name="Grace Lemersal" position="Officer" />
             <Card img={placeholder} name="Elise Alvarez-salazar" position="Secretary" />
-            <Card img={placeholder} name="Emma Opper" position="???" />
+            <Card img={placeholder} name="Emma Opper" position="Media Coordinator" />
           </div>
         </div>
       </div>
