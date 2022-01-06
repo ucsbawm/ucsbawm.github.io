@@ -29,7 +29,7 @@ export default class Navbar extends React.Component {
                     <div className={"flex flex-col px-2 my-auto -mx-4 md:flex-row md:mx-0 md:py-0 md:block " + (this.state.open ? "" : "hidden")}>
                         <NavButton href="#about">About</NavButton>
                         <NavButton href="#events">Events</NavButton>
-                        <NavButton href="#staff">Staff</NavButton>
+                        <NavButton href="#Officers">Officers</NavButton>
                         <NavButton href="#contact">Contact</NavButton>
                     </div>
                 </div>
