@@ -4,6 +4,9 @@ import banner1 from './media/ucsb_banner.jpg';
 import banner2 from './media/ucsb_beach.png';
 import placeholder from './media/Officers/placeholder.png';
 import logo from './media/logo.jpg';
+import hannahAWM from './media/Officers/hannahAWM.jpeg';
+import belindaAWM from './media/Officers/belindaAWM.jpeg';
+import emmaAWM from './media/Officers/emmaAWM.jpeg';
 
 function App() {
   return (
@@ -64,11 +67,11 @@ function Officers() {
         <div className="mx-auto p-10 overflow-auto">
           <div className="flex flex-row flex-nowrap lg:flex-wrap lg:justify-center gap-8">
             <Card img={placeholder} name="Gahl Shemy" position="President" />
-            <Card img={placeholder} name="Hannah Li" position="Treasurer" />
-            <Card img={placeholder} name="Belinda Lehmann" position="Social Chair" />
             <Card img={placeholder} name="Grace Lemersal" position="Vice President" />
+            <Card img={hannahAWM} name="Hannah Li" position="Treasurer" />
+            <Card img={belindaAWM} name="Belinda Lehmann" position="Social Chair" />
             <Card img={placeholder} name="Elise Alvarez-Salazar" position="Secretary" />
-            <Card img={placeholder} name="Emma Opper" position="Media Coordinator" />
+            <Card img={emmaAWM} name="Emma Opper" position="Media Coordinator" />
           </div>
         </div>
       </div>
