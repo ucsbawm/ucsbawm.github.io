@@ -67,7 +67,7 @@ function Officers() {
             <Card img={placeholder} name="Hannah Li" position="Treasurer" />
             <Card img={placeholder} name="Belinda Lehmann" position="Social Chair" />
             <Card img={placeholder} name="Grace Lemersal" position="Vice President" />
-            <Card img={placeholder} name="Elise Alvarez-salazar" position="Secretary" />
+            <Card img={placeholder} name="Elise Alvarez-Salazar" position="Secretary" />
             <Card img={placeholder} name="Emma Opper" position="Media Coordinator" />
           </div>
         </div>
