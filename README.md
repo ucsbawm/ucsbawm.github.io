@@ -1,10 +1,13 @@
 # Instructions for Updating Website
 
+Open Pycharm.
+
 You should start by testing the website by running
 ```
 npm run start
 ```
-This will host the website locally at https://localhost:3000/.
+in Terminal (on Pycharm). This will host the website locally at https://localhost:3000/.
+To stop the server, do Control C in the terminal.
 
 If you're satisfied with your changes, you should 'track' your changes and commit them, which you can do by
 ```

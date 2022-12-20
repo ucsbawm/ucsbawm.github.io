@@ -32,7 +32,7 @@ function About() {
           <div className="w-full sm:p-10">
             <Title>About us.</Title>
             <Body>
-              The Association for Women in Math Student Chapter at UCSB is a club dedicated to empowering and unifying a community of mathematicians, both undergraduate and graduate. We support young women and non-binary individuals who feel that they are one of few in this field of study, and we focus on presenting a variety of speakers, events and opportunities to reach all strands of the mathematical community. All genders are welcome at every meeting.
+              The Association for Women in Math Student Chapter at UCSB is a club dedicated to empowering and unifying a community of mathematicians, both undergraduate and graduate. We support young women and non-binary individuals who feel that they are one of few in this field of study, and we focus on presenting a variety of speakers, events, and opportunities to reach all strands of the mathematical community. All genders are welcome at every meeting.
             </Body>
           </div>
         </TwoColContainer>
@@ -47,7 +47,7 @@ function Events() {
         <div className="w-full p-10 sm:p-10">
           <Title>Events.</Title>
           <Body>
-              We meet [weekly?] at [time/day?]. Pizza? Research and industry opportunities? Social events? Cool math stuff? I actually don't know.
+              We meet bi-monthly on Wednesdays from 5-6 PM at South Hall 6635. Pizza at every meeting! See the events tab for this quarter's plans, as well as past quarters' events.
           </Body>
           <Link href="https://www.facebook.com/UCSBAWM/">Check us out on Facebook.</Link>
         </div>
@@ -69,7 +69,6 @@ function Officers() {
             <Card img={placeholder} name="Gahl Shemy" position="President" />
             <Card img={placeholder} name="Grace Lemersal" position="Vice President" />
             <Card img={hannahAWM} name="Hannah Li" position="Treasurer" />
-            <Card img={belindaAWM} name="Belinda Lehmann" position="Social Chair" />
             <Card img={placeholder} name="Elise Alvarez-Salazar" position="Secretary" />
             <Card img={emmaAWM} name="Emma Opper" position="Media Coordinator" />
           </div>
