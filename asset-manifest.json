@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4c5f17aa.css",
-    "main.js": "/static/js/main.8cd50fb0.js",
+    "main.js": "/static/js/main.34f15e0f.js",
     "static/js/787.c6316b2d.chunk.js": "/static/js/787.c6316b2d.chunk.js",
     "static/media/ucsb_beach.png": "/static/media/ucsb_beach.4af544582fbae5f4c688.png",
     "static/media/belindaAWM.jpeg": "/static/media/belindaAWM.15eb94b28f845825951d.jpeg",
@@ -12,11 +12,11 @@
     "static/media/logo.jpg": "/static/media/logo.eb3eef07c76fdbb451d6.jpg",
     "index.html": "/index.html",
     "main.4c5f17aa.css.map": "/static/css/main.4c5f17aa.css.map",
-    "main.8cd50fb0.js.map": "/static/js/main.8cd50fb0.js.map",
+    "main.34f15e0f.js.map": "/static/js/main.34f15e0f.js.map",
     "787.c6316b2d.chunk.js.map": "/static/js/787.c6316b2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c5f17aa.css",
-    "static/js/main.8cd50fb0.js"
+    "static/js/main.34f15e0f.js"
   ]
 }
