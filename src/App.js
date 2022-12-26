@@ -5,7 +5,8 @@ import banner2 from './media/ucsb_beach.png';
 import placeholder from './media/Officers/placeholder.png';
 import logo from './media/logo.jpg';
 import hannahAWM from './media/Officers/hannahAWM.jpeg';
-import belindaAWM from './media/Officers/belindaAWM.jpeg';
+import eliseAWM from './media/Officers/eliseAWM.JPG';
+import gahlAWM from './media/Officers/gahlAWM.jpeg';
 import emmaAWM from './media/Officers/emmaAWM.jpeg';
 
 function App() {
@@ -66,10 +67,10 @@ function Officers() {
         <Title className="text-center">Officers.</Title>
         <div className="mx-auto p-10 overflow-auto">
           <div className="flex flex-row flex-nowrap lg:flex-wrap lg:justify-center gap-8">
-            <Card img={placeholder} name="Gahl Shemy" position="Officer" />
+            <Card img={eliseAWM} name="Elise Alvarez-Salazar" position="President" />
+            <Card img={gahlAWM} name="Gahl Shemy" position="Officer" />
             <Card img={placeholder} name="Sogol Cyrusian" position="Officer" />
             <Card img={hannahAWM} name="Hannah Li" position="Treasurer" />
-            <Card img={placeholder} name="Elise Alvarez-Salazar" position="President" />
             <Card img={emmaAWM} name="Emma Opper" position="Media Coordinator" />
             <Card img={placeholder} name="Sam Ream" position="Officer" />
           </div>
@@ -98,7 +99,7 @@ function Contact(){
         <div className="w-full sm:p-10">
           <Title>Contact.</Title>
           <Body>
-            Reach us... On facebook? Is there an email?
+            Reach us at ucsb.awm@gmail.com!
           </Body>
         </div>
       </TwoColContainer>
