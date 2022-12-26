@@ -66,11 +66,12 @@ function Officers() {
         <Title className="text-center">Officers.</Title>
         <div className="mx-auto p-10 overflow-auto">
           <div className="flex flex-row flex-nowrap lg:flex-wrap lg:justify-center gap-8">
-            <Card img={placeholder} name="Gahl Shemy" position="President" />
-            <Card img={placeholder} name="Grace Lemersal" position="Vice President" />
+            <Card img={placeholder} name="Gahl Shemy" position="Officer" />
+            <Card img={placeholder} name="Sogol Cyrusian" position="Officer" />
             <Card img={hannahAWM} name="Hannah Li" position="Treasurer" />
-            <Card img={placeholder} name="Elise Alvarez-Salazar" position="Secretary" />
+            <Card img={placeholder} name="Elise Alvarez-Salazar" position="President" />
             <Card img={emmaAWM} name="Emma Opper" position="Media Coordinator" />
+            <Card img={placeholder} name="Sam Ream" position="Officer" />
           </div>
         </div>
       </div>
