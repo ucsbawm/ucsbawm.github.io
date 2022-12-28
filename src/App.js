@@ -48,7 +48,12 @@ function Events() {
         <div className="w-full p-10 sm:p-10">
           <Title>Events.</Title>
           <Body>
-              We meet bi-monthly on Wednesdays from 5-6 PM at South Hall 6635. Pizza at every meeting! See the events tab for this quarter's plans, as well as past quarters' events.
+              We meet bi-monthly on Wednesdays from 5-6 PM at South Hall 6635. Pizza at every meeting!
+            <ul style= {{ listStyleType: "square" }}>
+            <li><strong>January 11:</strong> Personal statement workshop for REUs</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+            </ul>
           </Body>
           <Link href="https://www.facebook.com/UCSBAWM/">Check us out on Facebook.</Link>
         </div>
